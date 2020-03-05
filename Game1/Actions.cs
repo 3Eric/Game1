@@ -14,6 +14,7 @@ namespace Game1
         UI ui = new UI();
         public void Damage(Enemy e, int ww, int d, string sr, ref int r, int maxr, Rectangle rmr, ref Rectangle rr, int c)
         {
+
             r -= c;
             ui.UpdateR(r, maxr, rmr, ref rr, ww, sr);
             e.Hp -= d;
